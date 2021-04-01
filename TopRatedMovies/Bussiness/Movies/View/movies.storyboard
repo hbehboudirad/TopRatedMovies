@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MoviesViewControllerID" id="BYZ-38-t0r" customClass="MoviesViewController" customModule="SkyscannerCodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="86" translatesAutoresizingMaskIntoConstraints="NO" id="QiJ-Pi-m8z" customClass="LoadingView" customModule="SkyscannerCodingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="382" height="86"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="MSz-sV-U9j"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="86" translatesAutoresizingMaskIntoConstraints="NO" id="MCq-vW-oNH" customClass="ErrorView" customModule="SkyscannerCodingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="382" height="86"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="450" id="Ip4-iI-QI0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="atj-Hy-134"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="245" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="35" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3eP-iQ-S96" customClass="DynamicHeightTableView" customModule="SkyscannerCodingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="52" width="414" height="810"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.62745098040000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3eP-iQ-S96" firstAttribute="top" secondItem="QiJ-Pi-m8z" secondAttribute="top" id="2T8-X7-txr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3eP-iQ-S96" secondAttribute="bottom" id="73f-J9-PxA"/>
+                            <constraint firstItem="MCq-vW-oNH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93I-1N-fgf"/>
+                            <constraint firstItem="QiJ-Pi-m8z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="EIG-36-XUM"/>
+                            <constraint firstItem="MCq-vW-oNH" firstAttribute="top" secondItem="QiJ-Pi-m8z" secondAttribute="top" id="SI5-uP-V9U"/>
+                            <constraint firstItem="QiJ-Pi-m8z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="StC-jO-YoQ"/>
+                            <constraint firstItem="MCq-vW-oNH" firstAttribute="trailing" secondItem="QiJ-Pi-m8z" secondAttribute="trailing" priority="750" id="Z32-R8-AQY"/>
+                            <constraint firstItem="MCq-vW-oNH" firstAttribute="leading" secondItem="QiJ-Pi-m8z" secondAttribute="leading" priority="750" id="it4-6n-BFM"/>
+                            <constraint firstItem="3eP-iQ-S96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u2l-3W-rLi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QiJ-Pi-m8z" secondAttribute="trailing" constant="16" id="yfM-9k-GMX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3eP-iQ-S96" secondAttribute="trailing" id="zZ2-8n-FJa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="QiJ-Pi-m8z" id="7ub-8U-hV4"/>
+                        <outlet property="tableView" destination="3eP-iQ-S96" id="J8d-2V-ImU"/>
+                        <outlet property="viewFailure" destination="MCq-vW-oNH" id="Dzc-mr-mJj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7542" y="-2295"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

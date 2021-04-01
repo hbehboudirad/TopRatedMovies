@@ -1,0 +1,27 @@
+/* Main Page */
+
+"mainPage.title" = "Top Rated Movies";
+
+"mainPage.labels.loading" = "We are trying to fetch top rated movies data.\nPlease wait...";
+
+"mainPage.buttons.retry" = "Retry";
+"mainPage.buttons.loadMore" = "Load More Films";
+"mainPage.labels.via" = "via";
+
+/* Error Messages */
+"webService.errors.call" = "Error on fetching data from server.";
+"webService.errors.parse" = "Error on processing received data.";
+"webService.errors.noData" = "Error on parsing received data.";
+"webService.errors.httpRequest" = "Error on sending request to the server.";
+"webService.errors.httpServer" = "Error on handling the request on server side.";
+"webService.errors.httpUnknown" = "Unknown error on connecting to the server.";
+"webService.errors.dataProcess" = "Error on deserializing received data.";
+
+
+/* General */
+
+"general.hour.small" = "h";
+"general.minutes.small" = "m";
+"general.direct" = "Direct";
+"general.stop" = "Stop";
+"general.stops" = "Stops";

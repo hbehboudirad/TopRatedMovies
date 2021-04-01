@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-Wq-oUO">
+                                <rect key="frame" x="0.0" y="407" width="414" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Rated Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHa-fs-Nsb">
+                                        <rect key="frame" x="30.5" y="0.0" width="353" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A sample that demonstrats coding skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbk-E1-Poz">
+                                        <rect key="frame" x="55.5" y="61" width="303" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.81558060649999997" blue="0.7469041944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nbk-E1-Poz" firstAttribute="top" secondItem="fHa-fs-Nsb" secondAttribute="bottom" constant="4" id="3TO-me-DDX"/>
+                                    <constraint firstItem="fHa-fs-Nsb" firstAttribute="top" secondItem="DaW-Wq-oUO" secondAttribute="top" id="9RI-or-oLH"/>
+                                    <constraint firstAttribute="bottom" secondItem="nbk-E1-Poz" secondAttribute="bottom" id="H09-qK-lhC"/>
+                                    <constraint firstItem="fHa-fs-Nsb" firstAttribute="centerX" secondItem="DaW-Wq-oUO" secondAttribute="centerX" id="SF9-m9-6vh"/>
+                                    <constraint firstItem="nbk-E1-Poz" firstAttribute="centerX" secondItem="DaW-Wq-oUO" secondAttribute="centerX" id="uV7-1B-sEo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.81558060649999997" blue="0.7469041944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DaW-Wq-oUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4qA-ja-X1M"/>
+                            <constraint firstItem="DaW-Wq-oUO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7qZ-0t-hGN"/>
+                            <constraint firstItem="DaW-Wq-oUO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ang-qx-LaJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="204"/>
+        </scene>
+    </scenes>
+</document>
